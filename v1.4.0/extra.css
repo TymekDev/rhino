@@ -23,13 +23,14 @@
 
 a {
   color: var(--primary-color);
+}
 
-  &.nav-link {
-    color: hsl(0, 0%, 80%);
+a.nav-link,
+.home {
+  color: hsl(0, 0%, 80%);
 
-    &:hover {
-      color: hsl(0, 0%, 100%);
-    }
+  &:hover {
+    color: hsl(0, 0%, 100%);
   }
 }
 
