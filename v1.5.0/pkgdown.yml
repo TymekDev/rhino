@@ -29,8 +29,8 @@ articles:
   write-end-to-end-tests-with-cypress: tutorial/write-end-to-end-tests-with-cypress.html
   write-javascript-code: how-to/write-javascript-code.html
   write-r-code: how-to/write-r-code.html
-last_built: 2024-04-17T14:53Z
+last_built: 2024-04-18T07:03Z
 urls:
-  reference: https://appsilon.github.io/rhino/v1.5.0/reference
-  article: https://appsilon.github.io/rhino/v1.5.0/articles
+  reference: https://tymekdev.github.io/rhino/v1.5.0/reference
+  article: https://tymekdev.github.io/rhino/v1.5.0/articles
 
