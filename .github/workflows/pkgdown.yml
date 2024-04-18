@@ -38,7 +38,8 @@ jobs:
           build_versioned(
             repo = ".",
             versions = yaml::read_yaml("pkgdown/versions.yaml"),
-            url = "https://appsilon.github.io/rhino",
+            # url = "https://appsilon.github.io/rhino",
+            url = "https://tymekdev.github.io/rhino",
             destination = "docs"
           )
 
