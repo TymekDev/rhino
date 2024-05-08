@@ -1,9 +1,9 @@
 :root {
-  --primary-color: #4747b1;
+  --primary-color: #7b7cd2;
 }
 
 .navbar {
-  --bs-primary-rgb: 71, 71, 177;
+  --bs-primary-rgb: 123, 124, 210;
 }
 
 .navbar a.dropdown-item:hover,
@@ -11,14 +11,21 @@
   background-color: var(--primary-color);
 }
 
-.navbar-brand {
-  --bs-navbar-brand-color: #fff;
-  --bs-navbar-brand-hover-color: #fff;
+#navbar .navbar-nav .nav-item > .nav-link {
+  color: rgba(255, 255, 255, 0.8);
+
+  &:hover {
+    background-color: var(--primary-color);
+    color: #fff;
+  }
 }
 
-.navbar-dark input[type="search"] {
-  background-color: #fff;
-  color: #444;
+.navbar-brand {
+  --bs-navbar-brand-color: #fff;
+
+  &:hover {
+    --bs-navbar-brand-hover-color: rgba(255, 255, 255, 0.8);
+  }
 }
 
 a {
@@ -66,5 +73,17 @@ button.btn.btn-primary.btn-copy-ex {
     background-color: hsl(240, 42.7%, 38.6%);
     padding: 0.25rem 1rem;
     border-radius: 1rem;
+  }
+}
+
+summary:has(h3#past) {
+  & > * {
+    display: inline;
+  }
+
+  &::marker,
+  &::-webkit-details-marker {
+    /* an equivalent of Bootstrap's h3 that's within the summary */
+    font-size: calc(1.3rem + 0.6vw);
   }
 }
