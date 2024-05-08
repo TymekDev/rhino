@@ -47,6 +47,8 @@ jobs:
         uses: r-lib/actions/setup-r-dependencies@v2
         with:
           packages: Appsilon/rhino@${{ github.sha }}
+        env:
+          GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Setup Node
         uses: actions/setup-node@v3
@@ -68,6 +70,8 @@ jobs:
         run: |
           cd RhinoApp
           Rscript ../test-dependencies.R
+        env:
+          GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Node.js commands should respect RHINO_NPM
         # Skip this test on Windows because it requires a Unix shell.

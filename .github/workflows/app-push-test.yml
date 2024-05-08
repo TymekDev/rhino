@@ -23,6 +23,8 @@ jobs:
         uses: r-lib/actions/setup-r-dependencies@v2
         with:
           packages: Appsilon/rhino@${{ github.sha }}
+        env:
+          GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
 
       # The previous step installs `renv` using `pak`,
       # but it subsequentially fails in the pushed app and breaks the test
